@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:platzi_trips_app/description_place.dart';
-import 'package:platzi_trips_app/gradient_back.dart';
+import 'package:platzi_trips_app/header_appbar.dart';
 import 'package:platzi_trips_app/review_list.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light));
   runApp(const MyApp());
 }
 
@@ -37,7 +41,7 @@ class MyApp extends StatelessWidget {
               const ReviewList()
             ],
           ),
-          const GradientBack(),
+          const HeaderAppBar()
         ],
       )),
       // const MyHomePage(title: 'Flutter Demo Home Page')
