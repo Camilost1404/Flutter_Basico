@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:platzi_trips_app/platzi_trips.dart';
+// import 'package:platzi_trips_app/platzi_trips.dart';
 import 'package:platzi_trips_app/platzi_trips_cupertino.dart';
 
 void main() {
